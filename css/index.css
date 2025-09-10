@@ -4,6 +4,20 @@ body {
     font-family: "Verdana";
 }
 
+header{
+    position:sticky;
+    top: 0;
+    background-color: rgb(175, 175, 235);
+    padding: 5px;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    list-style-type: none;
+}
+
 h1 {
     color: rgb(2, 2, 182);
     font-size: 50px;
@@ -44,7 +58,7 @@ section {
     box-shadow: 0 2px 5px rgb(70, 69, 69);
 }
 
-#Experience ul {
+/* #Experience ul {
     list-style-type: none;
     padding: 0;
 }
@@ -52,6 +66,12 @@ section {
 #Experience li {
     background-color: rgb(237, 182, 220);
     margin-bottom: 6px;
+} */
+
+.experience-header {
+    display: flex;
+    justify-content:space-around;
+    align-items: baseline;
 }
 
 #Connect{
@@ -61,6 +81,13 @@ section {
 
 #Connect a {
     color:rgb(2, 2, 182);
+}
+
+#Connect ul {
+    display: flex;
+    padding: 0;
+    justify-content: space-around;
+    list-style-type: none;
 }
 
 #Connect a:hover {
