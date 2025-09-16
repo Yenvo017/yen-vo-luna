@@ -1,7 +1,8 @@
 body {
-    background-color: lightcyan;
-    color: rgb(2, 2, 182);
+    background-color: rgb(9, 14, 14);
+    color: rgb(45, 45, 197);
     font-family: "Verdana";
+    font-size: 20px;
 }
 
 header{
@@ -19,8 +20,8 @@ header nav ul {
 }
 
 h1 {
-    color: rgb(2, 2, 182);
-    font-size: 50px;
+    color: white;
+    font-size: 70px;
     font-weight: 600;
     text-align: center; 
 }
@@ -37,17 +38,30 @@ section {
 }
 
 #About{
-    text-align: center; /*center title*/
+    text-align: left; /*center title*/
     list-style-type: none;
-    background-color: blanchedalmond;
+    background-color: rgb(234, 152, 209);
     box-shadow: 0 2px 5px rgb(70, 69, 69);
 }
 
 #About img {
     border-radius:50%;
-    max-width: 300px;
-    max-height: 300px;
+    width: 250px;
+    height: 200px;
+    object-fit: cover;
+
 }
+
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+#About li {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+} 
 
 #About ul {
     list-style-type: none;
@@ -58,24 +72,49 @@ section {
     box-shadow: 0 2px 5px rgb(70, 69, 69);
 }
 
-/* #Experience ul {
+
+
+/* #Experience ul { 
     list-style-type: none;
     padding: 0;
-}
+} */
 
-#Experience li {
+
+/* #Experience li {
     background-color: rgb(237, 182, 220);
     margin-bottom: 6px;
-} */
+} */ 
+
 
 .experience-header {
     display: flex;
-    justify-content:space-around;
+    padding: 0;
+    justify-content:space-between;
     align-items: baseline;
+
+}
+
+.experience-item {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.experience-list {
+    display: flex;
+    flex-direction: column;
+    padding-left: 0;
+}
+
+.description {
+    padding: 10px;
+    padding-left: 20px;
+    margin-left: 30px;
+
 }
 
 #Connect{
-    background-color: coral;
+    background-color: rgb(234, 152, 209);
     box-shadow: 0 2px 5px rgb(70, 69, 69);
 }
 
@@ -86,7 +125,7 @@ section {
 #Connect ul {
     display: flex;
     padding: 0;
-    justify-content: space-around;
+    justify-content: space-between;
     list-style-type: none;
 }
 
