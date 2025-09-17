@@ -21,9 +21,21 @@ header nav ul {
 
 h1 {
     color: white;
-    font-size: 70px;
+    font-size: 50px;
     font-weight: 600;
     text-align: center; 
+}
+
+@media (min-width: 1000px){
+    h1{
+        font-size: 90px;
+    }
+}
+
+@media (max-width: 1000px){
+    h1{
+        color: rgb(135, 204, 250);
+    }
 }
 
 section {
@@ -49,12 +61,20 @@ section {
     width: 250px;
     height: 200px;
     object-fit: cover;
+}
 
+@media (min-width: 1000px){
+    #About img {
+    width: 400px;
+    height: 400px;  
+    }
 }
 
 .flex-container {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
+  padding-left: 0;
 }
 
 #About li {
@@ -72,32 +92,19 @@ section {
     box-shadow: 0 2px 5px rgb(70, 69, 69);
 }
 
-
-
-/* #Experience ul { 
-    list-style-type: none;
-    padding: 0;
-} */
-
-
-/* #Experience li {
-    background-color: rgb(237, 182, 220);
-    margin-bottom: 6px;
-} */ 
-
-
 .experience-header {
     display: flex;
     padding: 0;
     justify-content:space-between;
     align-items: baseline;
-
 }
 
 .experience-item {
     list-style: none;
-    display: flex;
-    justify-content: space-between;
+    /* display: flex;
+    justify-content: space-between; */
+    border: 2px solid rgb(22, 14, 14);
+    padding: 10px;
 }
 
 .experience-list {
@@ -110,7 +117,16 @@ section {
     padding: 10px;
     padding-left: 20px;
     margin-left: 30px;
+}
 
+#Skills{
+    background-color: rgb(234, 152, 209);
+    box-shadow: 0 2px 5px rgb(70, 69, 69);
+}
+
+#Projects{
+    background-color: rgb(234, 152, 209);
+    box-shadow: 0 2px 5px rgb(70, 69, 69);
 }
 
 #Connect{
