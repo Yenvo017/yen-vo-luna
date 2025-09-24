@@ -1,5 +1,5 @@
 body {
-    background-color: rgb(9, 14, 14);
+    background-color: rgb(238, 242, 242);
     color: rgb(45, 45, 197);
     font-family: "Verdana";
     font-size: 20px;
@@ -26,17 +26,6 @@ h1 {
     text-align: center; 
 }
 
-@media (min-width: 1000px){
-    h1{
-        font-size: 90px;
-    }
-}
-
-@media (max-width: 1000px){
-    h1{
-        color: rgb(135, 204, 250);
-    }
-}
 
 section {
       padding-top: 20px;
@@ -103,7 +92,7 @@ section {
     list-style: none;
     /* display: flex;
     justify-content: space-between; */
-    border: 2px solid rgb(22, 14, 14);
+    border: 2px solid rgb(250, 244, 244);
     padding: 10px;
 }
 
@@ -124,10 +113,24 @@ section {
     box-shadow: 0 2px 5px rgb(70, 69, 69);
 }
 
+#Skills ul{
+    list-style: none;
+    display: flex;
+    padding: 0;
+    justify-content:space-between;
+    flex-wrap: wrap;
+}
+
 #Projects{
     background-color: rgb(234, 152, 209);
     box-shadow: 0 2px 5px rgb(70, 69, 69);
 }
+
+#Projects ul {
+    list-style: none;
+    padding: 0;
+}
+
 
 #Connect{
     background-color: rgb(234, 152, 209);
@@ -148,4 +151,19 @@ section {
 #Connect a:hover {
     color: yellowgreen;
     text-decoration: underline;
+}
+
+/*Desktop*/
+@media (min-width: 1000px){
+    h1{
+        font-size: 90px;
+    }
+}
+
+
+/*Mobile*/
+@media (max-width: 1000px){
+    h1{
+        color: rgb(135, 204, 250);
+    }
 }
