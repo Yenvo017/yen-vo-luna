@@ -52,12 +52,6 @@ section {
     object-fit: cover;
 }
 
-@media (min-width: 1000px){
-    #About img {
-    width: 400px;
-    height: 400px;  
-    }
-}
 
 .flex-container {
   display: flex;
@@ -154,16 +148,34 @@ section {
 }
 
 /*Desktop*/
-@media (min-width: 1000px){
+@media (min-width: 768px){
+    body{
+        background-color: rgb(218, 194, 163);
+        color:rgb(177, 81, 81);
+        font-size: 30px;
+    }
     h1{
         font-size: 90px;
+        color:brown;
     }
+    #About img {
+        width: 400px;
+        height: 400px;  
+    }
+    #Connect a {
+        color:rgb(177, 81, 81);
+    }
+
 }
 
-
 /*Mobile*/
-@media (max-width: 1000px){
+@media (max-width: 768px){
     h1{
-        color: rgb(135, 204, 250);
+        font-size: 50px;
+        color:blue;
+    }
+    #About img {
+    width: 200px;
+    height: 200px;  
     }
 }
