@@ -147,6 +147,26 @@ section {
     text-decoration: underline;
 }
 
+#Form{
+    background-color: rgb(234, 152, 209);
+    box-shadow: 0 2px 5px rgb(70, 69, 69);
+}
+
+#Form textarea{
+    padding-left: 0;
+}
+
+#Form button {
+    font-family: "Verdana";
+}
+
+#Messages{
+    background-color: rgb(234, 152, 209);
+    box-shadow: 0 2px 5px rgb(70, 69, 69);   
+}
+
+
+
 /*Desktop*/
 @media (min-width: 768px){
     body{
@@ -166,6 +186,10 @@ section {
         color:rgb(177, 81, 81);
     }
 
+    #Form button{
+        color:rgb(177, 81, 81);
+        font-size: 30px; 
+    }
 }
 
 /*Mobile*/
@@ -177,5 +201,11 @@ section {
     #About img {
     width: 200px;
     height: 200px;  
+    }
+
+    #Form button{
+    color: rgb(45, 45, 197);
+    font-family: "Verdana";
+    font-size: 20px; 
     }
 }
