@@ -137,3 +137,53 @@ messageForm.addEventListener("submit",function(event){
     //clear form after submission
     messageForm.reset()
 });
+
+//---------------Lesson 13 Fetch API-----------//
+
+fetch("https://api.github.com/users/Yenvo017/repos")
+    .then((response) => {
+        if (!response.ok) {
+            throw new Error ("Failed to fetch data from Github. Please try again later");
+        }
+        return response.json();
+    })
+    .then((repositories)=>{
+        // repositories = JSON.parse(this.repositories);
+        console.log("Repositories:",repositories);
+        //get the projects section
+        const projectSection = document.getElementById("Projects");
+        //select the list within the projects section
+        const projectList = projectSection.querySelector("ul");
+        //clear the content just in case
+        projectList.innerHTML = "";
+
+        for (let i = 0; i < repositories.length; i++){
+             //create a new list item
+            const project = document.createElement("li");
+            //create a link for the list item
+            const link = document.createElement("a");
+            //set the link url
+            //link.href = html_url = "https://github.com/Yenvo017/yen-vo-luna"
+            link.href = repositories[i].html_url;   
+            //set the text for the link
+            link.textContent = repositories[i].name;
+            if(!repositories[i].fork){
+                //append the link to the list item
+                project.appendChild(link);
+                //append the list item to the list of projects
+                projectList.appendChild(project);
+            }      
+        }
+
+    })
+    .catch((error) => {
+        //log the error
+        console.error("Error fetching repositories: ", error);
+        //get the project section
+        const projectSection = document.getElementById("Projects");
+        //add an error message on the ui
+        const errorMessage = document.createElement("p");
+        errorMessage.innerHTML = 'Unable to load projects. Please try again later. ';
+        projectSection.appendChild(errorMessage);
+    });
+

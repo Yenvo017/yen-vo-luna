@@ -122,8 +122,12 @@ section {
 
 #Projects ul {
     list-style: none;
+    display: flex;
+    flex-wrap: wrap;
     padding: 0;
+    column-gap: 400px;
 }
+
 
 
 #Connect{
@@ -138,7 +142,7 @@ section {
 #Connect ul {
     display: flex;
     padding: 0;
-    justify-content: space-between;
+    column-gap: 400px;
     list-style-type: none;
 }
 
@@ -187,6 +191,11 @@ section {
     }
 
     #Form button{
+        color:rgb(177, 81, 81);
+        font-size: 30px; 
+    }
+
+    #Projects ul {
         color:rgb(177, 81, 81);
         font-size: 30px; 
     }
